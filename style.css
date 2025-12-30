@@ -1,0 +1,43 @@
+
+    body { 
+        font-family: 'Segoe UI', Arial, sans-serif; 
+        background-color: #f0f8ff; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        height: 100vh; 
+        margin: 0; 
+    }
+    .container { 
+        width: 85%; 
+        max-width: 380px; 
+        text-align: center; 
+        background: white; 
+        padding: 30px 20px; 
+        border-radius: 20px; 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    }
+    h1 { color: #00008b; font-size: 1.4em; margin-bottom: 25px; line-height: 1.2; }
+    .btn { 
+        display: block; 
+        width: 100%; 
+        padding: 18px 0; 
+        margin: 15px 0; 
+        border-radius: 12px; 
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 1.1em; 
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .btn-fb { background-color: #1877F2; color: white; }
+    .btn-ws { background-color: #25D366; color: white; }
+    
+    /* Efecto para celulares cuando se toca el botón */
+    .btn:active { 
+        transform: scale(0.96); 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    }
+    
+    .footer { margin-top: 25px; font-size: 0.85em; color: #777; font-weight: 500; }
