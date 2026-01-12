@@ -1,43 +1,114 @@
+* {
+    box-sizing: border-box;
+}
 
-    body { 
-        font-family: 'Segoe UI', Arial, sans-serif; 
-        background-color: #f0f8ff; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        height: 100vh; 
-        margin: 0; 
-    }
-    .container { 
-        width: 85%; 
-        max-width: 380px; 
-        text-align: center; 
-        background: white; 
-        padding: 30px 20px; 
-        border-radius: 20px; 
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-    }
-    h1 { color: #00008b; font-size: 1.4em; margin-bottom: 25px; line-height: 1.2; }
-    .btn { 
-        display: block; 
-        width: 100%; 
-        padding: 18px 0; 
-        margin: 15px 0; 
-        border-radius: 12px; 
-        text-decoration: none; 
-        font-weight: bold; 
-        font-size: 1.1em; 
-        transition: all 0.2s ease;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .btn-fb { background-color: #1877F2; color: white; }
-    .btn-ws { background-color: #25D366; color: white; }
-    
-    /* Efecto para celulares cuando se toca el botón */
-    .btn:active { 
-        transform: scale(0.96); 
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-    }
-    
-    .footer { margin-top: 25px; font-size: 0.85em; color: #777; font-weight: 500; }
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.98);
+    padding: 35px 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #1a2a6c;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.organizer {
+    color: #555;
+    font-size: 1.05em;
+    margin-bottom: 15px;
+}
+
+/* --- Título corregido: Sin degradados para no dañar el emoji --- */
+.event-title {
+    color: #000000; /* Negro sólido */
+    font-size: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+    background: transparent; /* Asegura que no haya color de fondo interfiriendo */
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn .icon {
+    font-size: 1.2em;
+    margin-right: 12px;
+    width: 20px;
+}
+
+.btn-fb { background-color: #1877F2; }
+.btn-yt { background-color: #FF0000; }
+.btn-ws { background-color: #25D366; }
+
+/* --- Diseño de la Fecha y Hora --- */
+.raffle-date-box {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f0f7ff;
+    border-radius: 12px;
+    border: 2px dashed #0072ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.raffle-date-box i {
+    font-size: 1.4em;
+    color: #0072ff;
+}
+
+.raffle-date-box p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #222;
+    text-align: left;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 0.85em;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
